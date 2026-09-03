@@ -1,0 +1,296 @@
+/* ===========================================
+   REPORTS DASHBOARD
+=========================================== */
+
+body{
+    background:#f4f7fb;
+}
+
+/* Dashboard Title */
+
+.dashboard-title{
+    font-size:32px;
+    font-weight:bold;
+    color:#198754;
+}
+
+/* ===============================
+   REPORT CARDS
+================================ */
+
+.report-card{
+
+    border-radius:18px;
+    transition:0.4s;
+    overflow:hidden;
+    cursor:pointer;
+
+}
+
+.report-card:hover{
+
+    transform:translateY(-8px) scale(1.03);
+
+    box-shadow:0 15px 30px rgba(0,0,0,.25);
+
+}
+
+/* Card Icon */
+
+.report-card .card-body div{
+
+    transition:.4s;
+
+}
+
+.report-card:hover .card-body div{
+
+    transform:rotate(8deg) scale(1.15);
+
+}
+
+/* ===============================
+   SUMMARY CARDS
+================================ */
+
+.card{
+
+    border-radius:16px;
+
+}
+
+.card:hover{
+
+    transition:.3s;
+
+    transform:translateY(-4px);
+
+}
+
+/* ===============================
+   TABLE
+================================ */
+
+.table th{
+
+    text-align:center;
+
+    vertical-align:middle;
+
+}
+
+.table td{
+
+    vertical-align:middle;
+
+}
+
+.table tbody tr:hover{
+
+    background:#eef8ff;
+
+}
+
+/* ===============================
+   LIST GROUP
+================================ */
+
+.list-group-item{
+
+    transition:.3s;
+
+}
+
+.list-group-item:hover{
+
+    background:#f8f9fa;
+
+    padding-left:22px;
+
+}
+
+/* ===============================
+   BADGES
+================================ */
+
+.badge{
+
+    font-size:13px;
+
+    padding:8px 12px;
+
+}
+
+/* ===============================
+   CHARTS
+================================ */
+
+canvas{
+
+    max-height:350px;
+
+}
+
+/* ===============================
+   SECTION HEADINGS
+================================ */
+
+.card-header h5{
+
+    font-weight:bold;
+
+    letter-spacing:.5px;
+
+}
+
+/* ===============================
+   TOTAL DONATION
+================================ */
+
+.text-success{
+
+    font-weight:bold;
+
+}
+
+/* ===============================
+   LOADING
+================================ */
+
+.spinner-border{
+
+    width:70px;
+
+    height:70px;
+
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+
+@media(max-width:992px){
+
+.report-card{
+
+margin-bottom:20px;
+
+}
+
+canvas{
+
+max-height:280px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.dashboard-title{
+
+font-size:24px;
+
+}
+
+.card-header h5{
+
+font-size:18px;
+
+}
+
+.table{
+
+font-size:13px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.report-card h1{
+
+font-size:28px;
+
+}
+
+.report-card h6{
+
+font-size:15px;
+
+}
+
+canvas{
+
+max-height:220px;
+
+}
+
+}
+
+/* ===============================
+   GRADIENT CARDS
+================================ */
+
+.bg-primary{
+
+background:linear-gradient(135deg,#007bff,#0056b3)!important;
+
+}
+
+.bg-success{
+
+background:linear-gradient(135deg,#28a745,#198754)!important;
+
+}
+
+.bg-danger{
+
+background:linear-gradient(135deg,#dc3545,#a71d2a)!important;
+
+}
+
+.bg-warning{
+
+background:linear-gradient(135deg,#ffc107,#ff9800)!important;
+
+color:#000!important;
+
+}
+
+.bg-info{
+
+background:linear-gradient(135deg,#17a2b8,#0dcaf0)!important;
+
+}
+
+.bg-secondary{
+
+background:linear-gradient(135deg,#6c757d,#495057)!important;
+
+}
+
+/* ===============================
+   SCROLLBAR
+================================ */
+
+::-webkit-scrollbar{
+
+width:8px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#198754;
+
+border-radius:20px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#f1f1f1;
+
+}

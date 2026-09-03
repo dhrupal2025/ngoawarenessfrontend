@@ -1,0 +1,75 @@
+.customer-dashboard
+{
+    background:#f8f9fa;
+    min-height:100vh;
+}
+
+
+.stat-card
+{
+    border:none;
+    border-radius:20px;
+    transition:0.4s;
+    animation:slideUp .7s;
+}
+
+
+.stat-card:hover
+{
+    transform:translateY(-10px);
+}
+
+
+
+.icon-box
+{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-size:25px;
+    margin-bottom:15px;
+}
+
+
+
+.card
+{
+    border-radius:20px;
+}
+
+
+
+@keyframes slideUp
+{
+
+from
+{
+    opacity:0;
+    transform:translateY(40px);
+}
+
+to
+{
+    opacity:1;
+    transform:translateY(0);
+}
+
+}
+
+
+
+
+@media(max-width:768px)
+{
+
+.customer-dashboard
+{
+    padding:15px!important;
+}
+
+
+}
