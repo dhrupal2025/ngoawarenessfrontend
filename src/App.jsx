@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
-import About from "./pages/About";
+import About from "./pages/about.jsx";
 import Events from "./pages/Events";
 import Gallery from "./pages/Gallery";
 import AdminHome from "./pages/AdminHome";
@@ -17,7 +17,7 @@ import DonationForm from "./pages/DonationForm";
 import Volunteer from "./pages/Volunteer";
 import MyDonations from "./pages/MyDonations";
 import VolunteerApplication from "./pages/VolunteerApplication";
-import Campaigns from "./pages/campaign";
+import Campaigns from "./pages/campaign.jsx";
 import ManageVolunteerRequests from "./pages/ManageVolunteerRequests";
 import ManageCampaigns from "./pages/ManageCampaigns";
 import AddCampaign from "./pages/AddCampaign";
@@ -29,9 +29,6 @@ import Feedback from "./pages/Feedback";
 import ManageFeedback from "./pages/ManageFeedback";
 import CampaignDetails from "./pages/CampaignDetails";
 import MyVolunteerRequests from "./pages/MyVolunteerRequests";
-
-
-
 
 
 function App() {
