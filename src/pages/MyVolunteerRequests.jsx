@@ -11,7 +11,7 @@ function MyVolunteerRequests() {
     // card / table
 const [view, setView] = useState("table");
     const API_URL =
-        "http://localhost:8081/api/volunteer-applications";
+        "https://ngoawarenessbackend.onrender.com/api/volunteer-applications";
 
 
     // =====================================================

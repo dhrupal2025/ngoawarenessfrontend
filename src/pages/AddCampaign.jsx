@@ -89,7 +89,7 @@ const saveCampaign = async (e) => {
     try {
 
         const response = await axios.post(
-            "http://localhost:8081/api/campaigns",
+            "https://ngoawarenessbackend.onrender.com/api/campaigns",
             campaign
         );
 

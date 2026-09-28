@@ -79,7 +79,7 @@ function Register() {
 
 
       const response = await axios.post(
-        "http://localhost:8081/api/registeruser/send-otp",
+        "https://ngoawarenessbackend.onrender.com/api/registeruser/send-otp",
         {
           email: email
         }

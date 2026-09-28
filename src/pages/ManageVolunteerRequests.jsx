@@ -26,7 +26,7 @@ function ManageVolunteerRequests() {
             setLoading(true);
 
             const response = await axios.get(
-                "http://localhost:8081/api/volunteer-applications"
+                "https://ngoawarenessbackend.onrender.com/api/volunteer-applications"
             );
 
             setApplications(response.data);
@@ -57,7 +57,7 @@ function ManageVolunteerRequests() {
     try {
 
         await axios.put(
-            `http://localhost:8081/api/volunteer-applications/${id}/status`,
+            `https://ngoawarenessbackend.onrender.com/api/volunteer-applications/${id}/status`,
             null,
             {
                 params: {
@@ -101,7 +101,7 @@ function ManageVolunteerRequests() {
         try {
 
             await axios.delete(
-                `http://localhost:8081/api/volunteer-applications/${id}`
+                `https://ngoawarenessbackend.onrender.com/api/volunteer-applications/${id}`
             );
 
             alert("Application deleted successfully.");

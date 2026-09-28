@@ -16,7 +16,7 @@ function Events() {
         try {
 
             const response = await axios.get(
-                "http://localhost:8081/api/events"
+                "https://ngoawarenessbackend.onrender.com/api/events"
             );
 
             setEvents(response.data);

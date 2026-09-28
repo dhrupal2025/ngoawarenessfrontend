@@ -2,57 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import Navbar from "../components/Navbar";
-
-function Volunteer() {
-
-    const [events, setEvents] = useState([]);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState("");
-
-    const navigate = useNavigate();
-
-    const API_URL = "http://localhost:8081/api/volunteers";
-
-
-    // =========================
-    // LOAD VOLUNTEER EVENTS
-    // =========================
-    useEffect(() => {
-        loadEvents();
-    }, []);
-
-
-    const loadEvents = async () => {
-
-        try {
-
-            setLoading(true);
-            setError("");
-
-            const response = await axios.get(API_URL);
-
-            setEvents(response.data);
-
-        } catch (error) {
-
-            console.error("Volunteer events loading error:", error);
-
-            /*
-             * Sample data is used only when the backend
-             * is unavailable.
-             */
-
-            setEvents(sampleEvents);
-
-        } finally {
-
-            setLoading(false);
-
-        }
-    };
-
-
-    // =========================
+ // =========================
     // SAMPLE EVENTS
     // =========================
     const sampleEvents = [
@@ -94,6 +44,56 @@ function Volunteer() {
         }
 
     ];
+function Volunteer() {
+
+    const [events, setEvents] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState("");
+
+    const navigate = useNavigate();
+
+    const API_URL = "https://ngoawarenessbackend.onrender.com/api/volunteers";
+
+
+    // =========================
+    // LOAD VOLUNTEER EVENTS
+    // =========================
+    useEffect(() => {
+        loadEvents();
+    }, []);
+
+
+    const loadEvents = async () => {
+
+        try {
+
+            setLoading(true);
+            setError("");
+
+            const response = await axios.get(API_URL);
+
+            setEvents(response.data);
+
+        } catch (error) {
+
+            console.error("Volunteer events loading error:", error);
+
+            /*
+             * Sample data is used only when the backend
+             * is unavailable.
+             */
+
+            setEvents(sampleEvents);
+
+        } finally {
+
+            setLoading(false);
+
+        }
+    };
+
+
+   
 
 
     return (

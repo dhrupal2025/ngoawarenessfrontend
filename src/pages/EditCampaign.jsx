@@ -26,7 +26,7 @@ function EditCampaign() {
         try {
 
             const res = await axios.get(
-                `http://localhost:8081/api/campaigns/${id}`
+                `https://ngoawarenessbackend.onrender.com/api/campaigns/${id}`
             );
 
             setCampaign(res.data);
@@ -58,7 +58,7 @@ function EditCampaign() {
         try {
 
             await axios.put(
-                `http://localhost:8081/api/campaigns/${id}`,
+                `https://ngoawarenessbackend.onrender.com/api/campaigns/${id}`,
                 campaign
             );
 

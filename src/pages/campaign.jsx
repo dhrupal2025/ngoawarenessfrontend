@@ -11,7 +11,7 @@ function Campaigns() {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState("");
 
-    const API_URL = "http://localhost:8081/api/campaigns";
+    const API_URL = "https://ngoawarenessbackend.onrender.com/api/campaigns";
 
 
     // =========================

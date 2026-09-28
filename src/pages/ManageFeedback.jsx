@@ -17,10 +17,9 @@ function ManageFeedback() {
     useEffect(() => {
 
         const result = feedbacks.filter((item) =>
-            item.name.toLowerCase().includes(search.toLowerCase()) ||
-            item.email.toLowerCase().includes(search.toLowerCase())
-        );
-
+    (item.name?.toLowerCase() || "").includes(search.toLowerCase()) ||
+    (item.email?.toLowerCase() || "").includes(search.toLowerCase())
+);
         setFilteredFeedbacks(result);
 
     }, [search, feedbacks]);
@@ -29,7 +28,7 @@ function ManageFeedback() {
 
         try {
 
-            const response = await axios.get("http://localhost:8081/api/feedback");
+            const response = await axios.get("https://ngoawarenessbackend.onrender.com/api/feedback");
 
             setFeedbacks(response.data);
             setFilteredFeedbacks(response.data);
@@ -53,11 +52,9 @@ function ManageFeedback() {
 
         try {
 
-            await axios.delete(`http://localhost:8081/api/feedback/${id}`);
-
-            alert("Feedback deleted successfully.");
-
-            loadFeedback();
+            await axios.delete(`https://ngoawarenessbackend.onrender.com/api/feedback/${id}`);
+alert("Feedback deleted successfully.");
+setFeedbacks((prev) => prev.filter((item) => item.id !== id));
 
         } catch (error) {
 

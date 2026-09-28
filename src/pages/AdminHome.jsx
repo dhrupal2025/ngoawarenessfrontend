@@ -113,12 +113,12 @@ const loadDashboard = async () => {
             donationsRes,
             requestsRes
         ] = await Promise.all([
-            axios.get("http://localhost:8081/api/registeruser"),
-            axios.get("http://localhost:8081/api/campaigns"),
-            axios.get("http://localhost:8081/api/events"),
-            axios.get("http://localhost:8081/api/volunteers"),
-            axios.get("http://localhost:8081/api/donations"),
-            axios.get("http://localhost:8081/api/volunteer-applications")
+            axios.get("https://ngoawarenessbackend.onrender.com/api/registeruser"),
+            axios.get("https://ngoawarenessbackend.onrender.com/api/campaigns"),
+            axios.get("https://ngoawarenessbackend.onrender.com/api/events"),
+            axios.get("https://ngoawarenessbackend.onrender.com/api/volunteers"),
+            axios.get("https://ngoawarenessbackend.onrender.com/api/donations"),
+            axios.get("https://ngoawarenessbackend.onrender.com/api/volunteer-applications")
         ]);
 
         // 👇 Add here

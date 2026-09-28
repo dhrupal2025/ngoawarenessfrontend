@@ -24,7 +24,7 @@ function ManageVolunteers() {
         try {
 
             const response = await axios.get(
-                "http://localhost:8081/api/volunteers"
+                "https://ngoawarenessbackend.onrender.com/api/volunteers"
             );
 
             setVolunteers(response.data);
@@ -57,7 +57,7 @@ function ManageVolunteers() {
         try {
 
             await axios.delete(
-                `http://localhost:8081/api/volunteers/${id}`
+                `https://ngoawarenessbackend.onrender.com/api/volunteers/${id}`
             );
 
             alert("Volunteer opportunity deleted successfully.");
@@ -89,7 +89,7 @@ function ManageVolunteers() {
         try {
 
             await axios.put(
-                `http://localhost:8081/api/volunteers/${volunteer.id}`,
+                `https://ngoawarenessbackend.onrender.com/api/volunteers/${volunteer.id}`,
                 {
                     ...volunteer,
                     status: newStatus

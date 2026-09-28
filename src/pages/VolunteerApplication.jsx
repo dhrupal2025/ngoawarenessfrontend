@@ -53,7 +53,7 @@ function VolunteerApplication() {
             console.log("Event ID:", id);
 
             const response = await axios.post(
-                `http://localhost:8081/api/volunteer-applications/${id}`,
+                `https://ngoawarenessbackend.onrender.com/api/volunteer-applications/${id}`,
                 application,
                 {
                     headers: {

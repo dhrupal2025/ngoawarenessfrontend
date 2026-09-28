@@ -42,14 +42,13 @@ function Feedback() {
     }
 
     try {
-      await axios.post("http://localhost:8081/api/feedback", feedback);
+      await axios.post("https://ngoawarenessbackend.onrender.com/api/feedback", feedback);
 
    alert("🎉 Thank you! Your feedback has been submitted successfully.");
 
       setFeedback({
         name: "",
         email: "",
-        subject: "",
         rating: 0,
         message: "",
       });

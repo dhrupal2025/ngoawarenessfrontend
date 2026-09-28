@@ -33,7 +33,7 @@ function EditVolunteer() {
         try {
 
             const response = await axios.get(
-                `http://localhost:8081/api/volunteers/${id}`
+                `https://ngoawarenessbackend.onrender.com/api/volunteers/${id}`
             );
 
             setVolunteer(response.data);
@@ -136,7 +136,7 @@ function EditVolunteer() {
             );
 
             await axios.put(
-                `http://localhost:8081/api/volunteers/${id}`,
+                `https://ngoawarenessbackend.onrender.com/api/volunteers/${id}`,
                 volunteer,
                 {
                     headers: {

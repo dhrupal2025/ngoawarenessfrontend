@@ -17,7 +17,7 @@ function ManageDonations() {
     const loadDonations = async () => {
         try {
             const response = await axios.get(
-                "http://localhost:8081/api/donations"
+                "https://ngoawarenessbackend.onrender.com/api/donations"
             );
             setDonations(response.data);
         } catch (error) {
@@ -34,7 +34,7 @@ function ManageDonations() {
         try {
 
             await axios.delete(
-                `http://localhost:8081/api/donations/${id}`
+                `https://ngoawarenessbackend.onrender.com/api/donations/${id}`
             );
 
             loadDonations();

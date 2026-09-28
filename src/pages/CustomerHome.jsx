@@ -119,22 +119,22 @@ function CustomerHome() {
 
             // EVENTS
             const eventRes = await axios.get(
-                "http://localhost:8081/api/events"
+                "https://ngoawarenessbackend.onrender.com/api/events"
             );
 
             // VOLUNTEERS
             const volunteerRes = await axios.get(
-                "http://localhost:8081/api/volunteers"
+                "https://ngoawarenessbackend.onrender.com/api/volunteers"
             );
 
             // DONATIONS
             const donationRes = await axios.get(
-                "http://localhost:8081/api/donations"
+                "https://ngoawarenessbackend.onrender.com/api/donations"
             );
 
             // CAMPAIGNS
             const campaignRes = await axios.get(
-                "http://localhost:8081/api/campaigns"
+                "https://ngoawarenessbackend.onrender.com/api/campaigns"
             );
 
             // =========================

@@ -35,7 +35,7 @@ function MyDonations() {
             }
 
             const response = await axios.get(
-                "http://localhost:8081/api/donations/my",
+                "https://ngoawarenessbackend.onrender.com/api/donations/my",
                 {
                     params: {
                         email: donationEmail
@@ -247,7 +247,7 @@ function MyDonations() {
                                                             className="btn btn-success btn-sm"
                                                             onClick={() =>
                                                                 window.open(
-                                                                    `http://localhost:8081/api/pdf/donation/${donation.id}`,
+                                                                    `https://ngoawarenessbackend.onrender.com/api/pdf/donation/${donation.id}`,
                                                                     "_blank"
                                                                 )
                                                             }

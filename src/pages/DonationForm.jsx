@@ -54,7 +54,7 @@ function DonationForm() {
         try {
 
             const response = await axios.get(
-                `http://localhost:8081/api/campaigns/${campaignId}`
+                `https://ngoawarenessbackend.onrender.com/api/campaigns/${campaignId}`
             );
 
             setCampaign(response.data);

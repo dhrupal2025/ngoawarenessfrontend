@@ -26,7 +26,7 @@ function CampaignDetails() {
             setError("");
 
             const response = await axios.get(
-                `http://localhost:8081/api/campaigns/${id}`
+                `https://ngoawarenessbackend.onrender.com/api/campaigns/${id}`
             );
 
             if (response.data) {

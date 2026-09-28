@@ -19,7 +19,7 @@ function ManageCampaigns() {
         try {
 
             const response = await axios.get(
-                "http://localhost:8081/api/campaigns"
+                "https://ngoawarenessbackend.onrender.com/api/campaigns"
             );
 
             console.log("Campaigns:", response.data);
@@ -49,7 +49,7 @@ function ManageCampaigns() {
         try {
 
             await axios.delete(
-                `http://localhost:8081/api/campaigns/${id}`
+                `https://ngoawarenessbackend.onrender.com/api/campaigns/${id}`
             );
 
             alert("Campaign Deleted Successfully");

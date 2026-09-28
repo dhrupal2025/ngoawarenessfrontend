@@ -14,7 +14,7 @@ function Users() {
     try {
 
       const response = await axios.get(
-        "http://localhost:8081/api/registeruser"
+        "https://ngoawarenessbackend.onrender.com/api/registeruser"
       );
 
       setUsers(response.data);
@@ -34,7 +34,7 @@ function Users() {
     try {
 
       await axios.delete(
-        `http://localhost:8081/api/registeruser/${id}`
+        `https://ngoawarenessbackend.onrender.com/api/registeruser/${id}`
       );
 
       alert("User Deleted Successfully");
