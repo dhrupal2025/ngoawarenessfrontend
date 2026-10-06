@@ -152,7 +152,7 @@ function Register() {
 
 
       const response = await axios.post(
-        "http://localhost:8081/api/registeruser/verify-otp",
+        "https://ngoawarenessbackend.onrender.com/api/registeruser/verify-otp",
         {
           email: formData.email.trim().toLowerCase(),
           otp: otp.trim()
@@ -230,7 +230,7 @@ function Register() {
 
 
       const response = await axios.post(
-        "http://localhost:8081/api/registeruser",
+        "https://ngoawarenessbackend.onrender.com/api/registeruser",
         {
           name: formData.name.trim(),
           email: formData.email.trim().toLowerCase(),
